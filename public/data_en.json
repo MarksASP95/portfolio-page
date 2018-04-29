@@ -1,0 +1,79 @@
+{
+    "bio":{    
+    },
+    "experience":{
+        "projects":[{
+            "title":"Maze Generator",
+            "language":"[Java]",
+            "description":"Its name describes it pretty much. It creates random Mazes using the Aldous-Broder Algorithm.",
+            "imgSrc":"img/maze.PNG",
+            "imgAlt":"maze",
+            "url":"https://github.com/MarksASP95/maze-generator-java"
+        },
+        {
+            "title":"Match Simulator",
+            "language":"[Javascript]",
+            "description":"Simulates soccer matches using the Soccer Decoder Algorithm by Alessandro Ferrarini. This demo will become a whole Russia 2018 simulation.",
+            "imgSrc":"img/soccer.JPG",
+            "imgAlt":"soccer",
+            "url":"https://github.com/MarksASP95/match_sim"
+        },
+        {
+            "title":"Build BST",
+            "language":"[Java]",
+            "description":"Takes a mathematical expression and represents it in a Binary Search Tree.",
+            "imgSrc":"img/tree.PNG",
+            "imgAlt":"bst",
+            "url":"https://github.com/MarksASP95/buildBST"
+        },
+        {
+            "title":"Mochila",
+            "language":"[CSS]",
+            "description":"Front End for a project being developed by me with Free Code Camp colleagues.",
+            "imgSrc":"img/mochila.JPG",
+            "imgAlt":"mochila",
+            "url":"https://github.com/MarksASP95/Mochila-FCC"
+        },
+        {
+            "title":"iOS Calculator",
+            "language":"[ReactJS]",
+            "description":"iOS Calculator simulation.",
+            "imgSrc":"img/ios-calc.PNG",
+            "imgAlt":"ios-calc",
+            "url":"https://ios-calc-masp.surge.sh"
+        }]
+    },
+    "skills":[
+        {
+            "skillType":"Front End",
+            "skillList":[
+                {"imgSrc":"img/skills/html5.png","imgAlt":"html5","figCaption":"HTML5"},
+                {"imgSrc":"img/skills/css3.png","imgAlt":"css3","figCaption":"CSS3"},
+                {"imgSrc":"img/skills/js1.png","imgAlt":"js","figCaption":"Javacript"},
+                {"imgSrc":"img/skills/reactjs.png","imgAlt":"reactjs","figCaption":"ReactJS"},
+                {"imgSrc":"img/skills/bootstrap.png","imgAlt":"bootstrap","figCaption":"Bootstrap"}
+            ]
+        },
+        {
+            "skillType":"Back End",
+            "skillList":[
+                {"imgSrc":"img/skills/php.png","imgAlt":"php","figCaption":"PHP"},
+                {"imgSrc":"img/skills/nodejs.png","imgAlt":"nodejs","figCaption":"NodeJS"}
+            ]
+        },
+        {
+            "skillType":"Databases",
+            "skillList":[
+                {"imgSrc":"img/skills/sql.png","imgAlt":"sql","figCaption":"SQL"}
+            ]
+        },
+        {
+            "skillType":"Desktop Apps",
+            "skillList":[
+                {"imgSrc":"img/skills/java.png","imgAlt":"java","figCaption":"Java"},
+                {"imgSrc":"img/skills/vb.png","imgAlt":"visual_basic","figCaption":"Visual Basic"}
+            ]
+        }
+    ]
+    
+}
