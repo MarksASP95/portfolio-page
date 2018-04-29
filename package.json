@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel ./src/script-compiled.js --out-file ./script-compiled.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarksASP95/portfolio-page.git"
+  },
+  "author": "Marco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarksASP95/portfolio-page/issues"
+  },
+  "homepage": "https://github.com/MarksASP95/portfolio-page",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
