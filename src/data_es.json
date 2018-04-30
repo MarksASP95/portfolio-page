@@ -1,0 +1,80 @@
+{
+    "bio":{    
+    },
+    "experience":{
+        "p":"He desarrollado proyectos académicos y personales (como esta página). Sin embargo, subo todo lo que hago a Github (<a href='http://github.com/MarksASP95'>MarksASP95</a>). <br /> Estos son mis proyectos favoritos:",
+        "projects":[{
+            "title":"Maze Generator",
+            "language":"[Java]",
+            "description":"Su nombre lo describe muy bien. Crea laberintos de forma aleatoria utilizando el Algoritmo Aldous-Broder.",
+            "imgSrc":"img/maze.PNG",
+            "imgAlt":"maze",
+            "url":"https://github.com/MarksASP95/maze-generator-java"
+        },
+        {
+            "title":"Match Simulator",
+            "language":"[Javascript]",
+            "description":"Simula partidos de futbol utilizando el algoritmo Soccer Decoder, hecho por Alessandro Ferrarini. Este demo se conventirá en una simulación del mundial de Rusia 2018.",
+            "imgSrc":"img/soccer.JPG",
+            "imgAlt":"soccer",
+            "url":"https://github.com/MarksASP95/match_sim"
+        },
+        {
+            "title":"Build BST",
+            "language":"[Java]",
+            "description":"Toma una expresión matemática y la muestra en un Árbol Binario de Búsqueda.",
+            "imgSrc":"img/tree.PNG",
+            "imgAlt":"bst",
+            "url":"https://github.com/MarksASP95/buildBST"
+        },
+        {
+            "title":"Mochila",
+            "language":"[CSS]",
+            "description":"Front End para un proyecto que está siendo desarrollado por mi y colegas de Free Code Camp.",
+            "imgSrc":"img/mochila.JPG",
+            "imgAlt":"mochila",
+            "url":"https://github.com/MarksASP95/Mochila-FCC"
+        },
+        {
+            "title":"iOS Calculator",
+            "language":"[ReactJS]",
+            "description":"Simulación de una calculadora de iOS.",
+            "imgSrc":"img/ios-calc.PNG",
+            "imgAlt":"ios-calc",
+            "url":"https://ios-calc-masp.surge.sh"
+        }]
+    },
+    "skills":[
+        {
+            "skillType":"Front End",
+            "skillList":[
+                {"imgSrc":"img/skills/html5.png","imgAlt":"html5","figCaption":"HTML5"},
+                {"imgSrc":"img/skills/css3.png","imgAlt":"css3","figCaption":"CSS3"},
+                {"imgSrc":"img/skills/js1.png","imgAlt":"js","figCaption":"Javacript"},
+                {"imgSrc":"img/skills/reactjs.png","imgAlt":"reactjs","figCaption":"ReactJS"},
+                {"imgSrc":"img/skills/bootstrap.png","imgAlt":"bootstrap","figCaption":"Bootstrap"}
+            ]
+        },
+        {
+            "skillType":"Back End",
+            "skillList":[
+                {"imgSrc":"img/skills/php.png","imgAlt":"php","figCaption":"PHP"},
+                {"imgSrc":"img/skills/nodejs.png","imgAlt":"nodejs","figCaption":"NodeJS"}
+            ]
+        },
+        {
+            "skillType":"Bases de datos",
+            "skillList":[
+                {"imgSrc":"img/skills/sql.png","imgAlt":"sql","figCaption":"SQL"}
+            ]
+        },
+        {
+            "skillType":"Aplicaciones de escritorio",
+            "skillList":[
+                {"imgSrc":"img/skills/java.png","imgAlt":"java","figCaption":"Java"},
+                {"imgSrc":"img/skills/vb.png","imgAlt":"visual_basic","figCaption":"Visual Basic"}
+            ]
+        }
+    ]
+    
+}
