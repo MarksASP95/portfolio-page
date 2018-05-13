@@ -6,16 +6,6 @@ function script(lang) {
 
     document.cookie = "";
 
-    $("#page-title").on("click",function(){
-        if(lang === "es-ES"){
-            document.cookie = "en-US";
-        }
-        else{
-            document.cookie = "es-ES";
-        }
-        location.reload();
-    });
-
     var en;
     var jsonFile;
     if (lang.substr(0, 2) === "es") {
@@ -28,9 +18,9 @@ function script(lang) {
 
     var navLabels;
     if (en) {
-        navLabels = ["bio", "experience", "skills", "education", "blog"];
+        navLabels = ["bio", "experience", "skills", "education"];
     } else {
-        navLabels = ["bio", "experiencia", "lenguajes", "educacion", "blog"];
+        navLabels = ["bio", "experiencia", "lenguajes", "educacion"];
     }
 
     var trans = {
@@ -38,7 +28,6 @@ function script(lang) {
         experiencia: "experience",
         lenguajes: "skills",
         educacion: "education",
-        blog: "blog"
     };
 
     function isMobile() {
@@ -113,6 +102,27 @@ function script(lang) {
         navItems[navItems.length - 1 - i].firstChild.innerHTML = navLabels[i];
         hiddenMenuItems[i].firstChild.innerHTML = navLabels[i];
     }
+
+    document.getElementById("language-container").childNodes[3].innerHTML = lang === "en-US" ? "idioma" : "Language";
+
+    $("#language-list a").on("click", function(e){
+        document.cookie = e.target.getAttribute("id");
+        location.reload();
+    });
+
+    document.querySelector("#language-container > a").addEventListener("click", function(e){
+        e.stopPropagation();
+        $("#language-list").toggleClass("language-up");
+        console.log(document.getElementById("language-list").classList[0]);
+        if(document.getElementById("language-list").classList[0] === "language-up"){
+            document.addEventListener("click", function(){
+                $("#language-list").removeClass("language-up");
+            });
+            
+        }
+    });
+
+    $("#bio").children().last().html(data.bio);
 
     function hidePhoneNumber() {
         $("#phone-number-container").css({
@@ -271,6 +281,8 @@ function script(lang) {
     function setPage(title) {
         $("#" + getValueByLanguage(title).toLowerCase()).fadeIn();
     }
+
+    document.querySelector("#experience p").innerHTML = data.experience.p;
 
     var projects = document.getElementById("projects");
     var projectList = data.experience.projects;

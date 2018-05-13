@@ -1,8 +1,10 @@
 "use strict";
 
-$(document).ready(script(navigator.language));
+$(document).ready(script(document.cookie === "" ? navigator.language : document.cookie));
 
 function script(lang) {
+
+    document.cookie = "";
 
     var en;
     var jsonFile;
@@ -16,17 +18,16 @@ function script(lang) {
 
     var navLabels;
     if (en) {
-        navLabels = ["bio", "experience", "skills", "education", "blog"];
+        navLabels = ["bio", "experience", "skills", "education"];
     } else {
-        navLabels = ["bio", "experiencia", "lenguajes", "educacion", "blog"];
+        navLabels = ["bio", "experiencia", "lenguajes", "educacion"];
     }
 
     var trans = {
         bio: "bio",
         experiencia: "experience",
         lenguajes: "skills",
-        educacion: "education",
-        blog: "blog"
+        educacion: "education"
     };
 
     function isMobile() {
@@ -95,10 +96,32 @@ function script(lang) {
     });
 
     var navItems = document.getElementsByClassName("nav-item");
+    var hiddenMenuItems = document.getElementsByClassName("hidden-menu-item");
 
     for (var i = 0; i < navItems.length; i++) {
         navItems[navItems.length - 1 - i].firstChild.innerHTML = navLabels[i];
+        hiddenMenuItems[i].firstChild.innerHTML = navLabels[i];
     }
+
+    document.getElementById("language-container").childNodes[3].innerHTML = lang === "en-US" ? "idioma" : "Language";
+
+    $("#language-list a").on("click", function (e) {
+        document.cookie = e.target.getAttribute("id");
+        location.reload();
+    });
+
+    document.querySelector("#language-container > a").addEventListener("click", function (e) {
+        e.stopPropagation();
+        $("#language-list").toggleClass("language-up");
+        console.log(document.getElementById("language-list").classList[0]);
+        if (document.getElementById("language-list").classList[0] === "language-up") {
+            document.addEventListener("click", function () {
+                $("#language-list").removeClass("language-up");
+            });
+        }
+    });
+
+    $("#bio").children().last().html(data.bio);
 
     function hidePhoneNumber() {
         $("#phone-number-container").css({
