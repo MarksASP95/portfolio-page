@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./src/script-compiled.js --out-file ./script-compiled.js"
+    "build": "babel ./src/script.js --out-file ./public/script-compiled.js",
+    "deploy": "surge public marco-suarez.surge.sh"
   },
   "repository": {
     "type": "git",
@@ -16,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/MarksASP95/portfolio-page/issues"
   },
-  "homepage": "https://github.com/MarksASP95/portfolio-page",
+  "homepage": "https://marco-suarez.surge.sh",
   "dependencies": {},
   "devDependencies": {
     "babel-cli": "^6.26.0",
