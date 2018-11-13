@@ -288,4 +288,28 @@ function script(lang) {
     }
 
     fillSkills(data.skills);
+
+    var edu = document.getElementById("education");
+    var ED = data.education;
+    for(let i = 0; i < data.education.length; i++){
+        var ed_item = document.createElement("DIV");
+        var ed_item_img = document.createElement("IMG");
+        var ed_item_desc = document.createElement("DIV");
+        ed_item.setAttribute("class","ed");
+        ed_item_img.setAttribute("src", ED[i].src);
+        ed_item_img.setAttribute("alt", ED[i].alt);
+        ed_item_desc.setAttribute("class","ed-desc");
+
+        ed_item_desc.appendChild(document.createElement("H3"));
+        ed_item_desc.lastChild.innerHTML = ED[i].ed_type;
+        
+
+        ed_item_desc.appendChild(document.createElement("P"));
+        ed_item_desc.lastChild.innerHTML = ED[i].education_desc;
+
+        ed_item.appendChild(ed_item_img);
+        ed_item.appendChild(ed_item_desc);
+
+        edu.appendChild(ed_item);
+    }
 };
