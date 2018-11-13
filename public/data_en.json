@@ -1,8 +1,16 @@
 {
-    "bio":"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?",
+    "bio": "I'm Marco Suárez, welcome to my porfolio page. I'm a Systems Engineering student at the Metropolitan University of Caracas and a web and desktop apps developer, I can also manage databases. <br /><br/ > I'm venezuelan, 23 years old and I live in Caracas. I consider myself as someone who's responsible, persistent, conscientious, emphatic and open-minded.",
     "experience":{
         "p":"I've developed academic and personal proyects (including this page). However, I upload all my projects and templates to Github (<a href='http://github.com/MarksASP95'>MarksASP95</a>). <br /> These are my favorite projects:",
         "projects":[{
+            "title":"uMakeIt",
+            "language":"[Angular]",
+            "description":"Food delivery web app.",
+            "imgSrc":"img/umakeit.JPG",
+            "imgAlt":"umakeit",
+            "url":"https://github.com/MarksASP95/umakeit-angular"
+        },
+        {
             "title":"Maze Generator",
             "language":"[Java]",
             "description":"Its name describes it pretty much. It creates random Mazes using the Aldous-Broder Algorithm.",
@@ -64,7 +72,8 @@
         {
             "skillType":"Databases",
             "skillList":[
-                {"imgSrc":"img/skills/sql.png","imgAlt":"sql","figCaption":"SQL"}
+                {"imgSrc":"img/skills/sql.png","imgAlt":"sql","figCaption":"SQL"},
+                {"imgSrc":"img/skills/mongodb.png","imgAlt":"mongodb","figCaption":"MongoDB"}
             ]
         },
         {
@@ -73,6 +82,20 @@
                 {"imgSrc":"img/skills/java.png","imgAlt":"java","figCaption":"Java"},
                 {"imgSrc":"img/skills/vb.png","imgAlt":"visual_basic","figCaption":"Visual Basic"}
             ]
+        }
+    ],
+    "education":[
+        {
+            "ed_type":"Universidad Metropolitana (UNIMET)",
+            "education_desc":"I'm a Systems Engineering student at the Metropolitan University (Caracas).",
+            "src":"img/unimet.jpg",
+            "alt":"unimet"
+        },
+        {
+            "ed_type":"Online courses",
+            "education_desc":"I've learned almost everything I know on programming and database management through online courses, mostly from Free Code Camp, Udemy, Team Treehouse and YouTube",
+            "src":"img/e-learning.jpg",
+            "alt":"e-learning"
         }
     ]
     
